@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Venue Hut</title>
+    <style>
+        body
+        {
+            /* background:url("bg.jpg"); */
+            background: url("../img/contactbg.jpg") no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            /* background-repeat:no-repeat;
+            background-size: cover; */
+            color:white;
+            font-size:30px;
+        }
+        h1
+        {
+            text-align:center;
+            font-style: italic;
+            font-family: cursive;
+        }
+        .myText
+        {
+            margin:10px 0px 10px 20%;
+            padding:10px;
+            border-radius:10px;
+            width:50%;
+        }
+        .TextArea
+        {
+            height:30px;
+        }
+        table
+        {
+            width:50%;
+            height:500px;
+            margin:auto;
+            border:5px dotted grey;
+            border-radius:20px;
+            padding:50px;
+        }
+        .btn
+        {
+            background-color: rgb(6, 94, 94);
+            color:rgb(73, 247, 232);
+            font-size:25px;
+            font-weight: bold;
+            border:2px solid #FFFFFF;
+            border-radius: 50px;
+            cursor:pointer;
+        }
+        .btn:hover
+        {
+            background-color: rgb(6, 94, 94, 0.5);
+        }
+        .btn1
+        {
+            width:55%;
+            height:50px;
+            margin-top:17%;
+        }
+        .btn2
+        {
+            width:45%;
+            height:50px;
+            margin-left:40%;
+            margin-top:12%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contact US</h1>
+    
+    <form>
+    <!-- <form class="" action="16.html" method="post"></form> -->
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input class="myText" type="text" placeholder="Enter your full name"></input></td>
+                <br>
+            </tr>
+            <tr>
+                <td>Mobile</td>
+                <td><input class="myText" type="number" placeholder="Enter your mobile number"></input></td>
+                <br>
+            </tr>
+            <tr>
+                <td>EmailID</td>
+                <td><input class="myText" type="email" name="email" placeholder="Enter your E-mail address"></input></td>
+                
+            </tr>
+            <tr>
+                <td>Suggestions</td>
+                <td><input class="TextArea myText" type="text" placeholder="Any suggestions for us?"></input></td>
+                
+            </tr>
+
+            <tr>
+                <td>
+                    <input class="btn btn1" type="button" value="Submit"></input>
+                </td>
+                <td>
+                    <input class="btn btn2" type="reset" value="Reset"></input>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue Hut</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-color" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <!-- <a class="navbar-item" href="index.html">
+            <img src="https://adapt.to/content/dam/adaptto/production/teaserbar/location.png/_jcr_content/renditions/original./location.png">
+          </a> -->
+      
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div id="navbarBasicExample" class="navbar-menu">
+          <div class="navbar-start">
+            <a class="navbar-item">
+              <img src="img/logo.png" width=60>
+            </a>
+
+            <a class="navbar-item" href="#home">
+              Home
+            </a>
+      
+            <a class="navbar-item" href="#services">
+              Services
+            </a>
+            
+            <a class="navbar-item" href="html/contact.html">
+              Contact
+            </a>
+
+            <div class="navbar-item has-dropdown is-hoverable">
+              <a class="navbar-link">
+                More
+              </a>
+      
+              <div class="navbar-dropdown">
+                <a class="navbar-item" href="#about">
+                  About
+                </a>
+                <a class="navbar-item">
+                  Jobs
+                </a>
+                <hr class="navbar-divider">
+                <a class="navbar-item">
+                  Report an issue
+                </a>
+              </div>
+            </div>
+          </div>
+      
+          <div class="navbar-end">
+            <div class="navbar-item">
+              <div class="buttons">
+                <a class="button is-primary is-medium">
+                  <strong>Sign up</strong>
+                </a>
+                <a class="button is-light is-medium">
+                  Log in
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- <div class="search-box">
+        <input type="search" class="search input is-medium is-info" placeholder="Search">
+        <button class="button is-info is-rounded is-medium btn">Search</button>
+      </div> -->
+
+      <div class="plan-event desktop-view-hide col-md-12 padding-0">
+        
+        <div class="home-page-Banner">
+        <div id="home" class="home-page-form mobile-view-hide">
+        <h1 class="event-head">Find Perfect Venue For Every Event </h1>
+        <div class="venue-category">
+        <ul class="list-inline">
+        <li class="venue-text"><span style="font-size: 20px;font-weight:bold">Restaurants</span></li>
+        <li class="venue-text"><span style="font-size: 20px;font-weight:bold">Resorts</span></li>
+        <li class="venue-text"><span style="font-size: 20px;font-weight:bold">Farm Houses</span></li>
+        <li class="venue-text"><span style="font-size: 20px;font-weight:bold">Banquet Halls</span></li>
+        <li class="venue-text"><span style="font-size: 20px;font-weight:bold">Party Lawns</span></li>
+        <li class="venue-text"><span style="font-size: 20px;font-weight:bold">Bars</span></li>
+         </ul>
+        </div>
+        <form action="/website/searchhome" method="post">
+        <div class="field-wrapper" style="margin-left:25%;">
+        <select name="occasion" class="select2" placeholder="I am Planning for">
+        <option value="" selected="selected">I am Planning for<i class="fa fa-caret-down" aria-hidden="true"></i></option>
+        <option value="1">
+        Wedding </option>
+        <option value="2">
+        Ring Ceremony </option>
+        <option value="3">
+        Birthday Party </option>
+        <option value="4">
+        Corporate Event </option>
+        <option value="5">
+        Conference </option>
+        
+        </select>
+        <button type="submit" class="button is-large is-primary" style="margin-top:4.5%;margin-left:1%;height:42px;">Search</button>
+        </div>
+        </form>
+        </div>
+        </div>
+
+
+        <div class="work-section" id="city_slider">
+          <div id="about" class="container padding-0">
+          <h2 class="same-head" style="font-size:25px;"><u>Browse Vendors & Venues</u></h2>
+          <div class="margin-30 padding-0 view-mobile bottom-0 msslider" style="margin-bottom: 40px;">
+          <div class="MS-content">
+
+          <div id="marriage" class="item" style="margin-top:7%;">
+          <a href="#marriage" class="color-change">
+          <div class="dummy_vendor">
+          <div class="hover-img" style="height: 500px;">
+          <img class="lazyloaded" style="width:100%;height:600px;" src="img/marriage.jpg" alt="Marriage Gardens"></div>
+          <p>Marriage Gardens</p>
+          <div style="padding-bottom: 17px;margin-bottom: 2px;">
+          </div>
+          </div></a>
+          </div>
+
+          <div id="birthday" class="item" style="margin-top:7%;">
+          <a href="#birthday" class="color-change">
+          <div class="dummy_vendor">
+          <div class="hover-img" style="height: 500px;">
+          <img class="lazyloaded" style="width:100%;height:600px;" src="img/birthday.webp" alt="Birthday Lounge"></div>
+          <p>Birthday Lounges</p>
+          <div style="padding-bottom: 17px;margin-bottom: 2px;">
+          </div>
+          </div></a>
+          </div>
+
+          <div id="restaurant" class="item" style="margin-top:7%;">
+          <a href="#restaurant" class="color-change">
+          <div class="dummy_vendor">
+          <div class="hover-img" style="height: 500px;">
+          <img class="lazyloaded" style="width:100%;height:600px;" src="img/restaurant.jpg" alt="Restaurants"></div>
+          <p>Restaurants</p>
+          <div style="padding-bottom: 17px;margin-bottom: 2px;">
+          </div>
+          </div></a>
+          </div>
+
+          <div id="bar" class="item" style="margin-top:7%;">
+          <a href="#bar" class="color-change">
+          <div class="dummy_vendor">
+          <div class="hover-img" style="height: 500px;">
+          <img class="lazyloaded" style="width:100%;height:600px;" src="img/bar.jpg" alt="Bars"></div>
+          <p>Bars</p>
+          <div style="padding-bottom: 17px;margin-bottom: 2px;">
+          </div>
+          </div></a>
+          </div>
+
+          <div id="resort" class="item" style="margin-top:7%;">
+          <a href="#resort" class="color-change">
+          <div class="dummy_vendor">
+          <div class="hover-img" style="height: 500px;">
+          <img class="lazyloaded" style="width:100%;height:600px;" src="img/resort.jpeg" alt="Resorts"></div>
+          <p>Resorts</p>
+          <div style="padding-bottom: 17px;margin-bottom: 2px;">
+          </div>
+          </div></a>
+          </div>
+          
+          </div>
+          </div>
+          </div>
+          </div>
+
+      <div id="services" class="main-footer color-black mobile-view-hide" style="background-color: rgba(0, 0, 0, 0.945);height:330px;">
+        <div class="container">
+          <div style="width:100%;">
+
+            <div class="menu-1">
+              <h3 style="margin-top: 53px;">Event Planning Services</h3>
+              <ul class="footer-links-list list-inline footer-links-list-desktop ">
+                <li class=" web-links"><a href="#about">All Event Vendors |</a></li>
+                <li class=" web-links"><a href="#restaurant">Catering Services |</a></li>
+                <li class=" web-links"><a href="#marriage">Wedding Planning |</a></li>
+                <li class=" web-links"><a href="#resort">Event Planning |</a></li>
+                <li class=" web-links"><a href="#birthday">Birthday Planning</a></li>
+              </ul>
+            </div>
+            <div class="menu-2">
+              <h3 style="margin-top: 53px;">Contact Info</h3>
+              <ul class="footer-links-list list-inline  ">
+                <li class=" web-links"><a href="html/contact.html">Contact Us</a></li>
+                <li class=" web-links"><a><i class="fa fa-phone" aria-hidden="true"></i> +91-XXXXX-XX123</a></li>
+                <li class=" web-links"><a href="mailto:venuehut@gmail.com" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i> venuehut@gmail.com</a></li>
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div style="width:100%;" class="col-md-6">
+            
+            <div class="menu-3">
+              <h3 style="margin-bottom:1%;">Stay Connected</h3>
+              
+              <span>
+                <a><img class="social-icon lazyloaded" width="29" height="29" src="img/fb.webp" alt="facebook"></a>
+              </span>
+                <span>
+                  <a><img class="social-icon lazyloaded" width="29" height="29" src="img/insta.webp" alt="instagram"></a>
+                </span>
+                <span>
+                  <a><img class="social-icon lazyloaded" width="29" height="29" src="img/twitter.webp" alt="twitter"></a>
+                </span>
+                <span>
+                  <a><img class="social-icon lazyloaded" width="29" height="29" src="img/linkedin.webp" alt="linkedin"></a>
+                </span>
+                <span>
+                  <a><img class="social-icon lazyloaded" width="29" height="29" src="img/pinterest.webp" alt="pinterest"></a>
+                </span>
+                <span>
+                  <a><img class="social-icon lazyloaded" width="29" height="29" src="img/youtube.webp" alt="youtube"></a>
+                </span>
+            </div>
+
+            <div class="menu-4">
+                <span>
+                  <a> <img class="lazyloaded" width="140" height="40" src="img/playstore.webp" alt="Partner app link" border="0">
+                  </a>
+                </span>
+            
+                <span style="margin-left:1%;">
+                  <a> <img class="lazyloaded" width="140" height="40" src="img/appstore.webp" alt="Partner app link" border="0">
+                  </a>
+                </span>
+                
+              </div>
+              
+            
+            </div>
+<!-- 
+            <div class="col-md-12">
+            <h3 style="margin-top: 35px;font-size: 15px;">Subscribe For Party Ideas and Offers</h3>
+            <a href="index.html">Home</a>
+            <a href="#about" target="_blank">About Us</a>
+            <a href="html/contact.html">Contact Us</a>
+            </div> -->
+          </div>
+          </div>
+            <div class="bottom-line">
+              <div class="container">
+                <span>&copy 2021 Venue Hut Pvt Ltd | All rights reserved</span>
+              </div>
+            </div>
+            
+
+</body>
+</html>
